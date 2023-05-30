@@ -6,8 +6,6 @@ Beautiful Colors Lookup in CLI
 
 ## Usage
 
-<div align='center'>vistoso</div>
-
 <div align='center'>npx <strong>vistoso</strong> <em>&lt;color-name&gt;</em></div>
 
 
