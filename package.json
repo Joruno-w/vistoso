@@ -1,27 +1,28 @@
 {
-  "name": "colordata",
+  "name": "vistoso",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "packageManager": "pnpm@7.9.5",
   "description": "Beautiful Colors Lookup in CLI",
   "author": "Joruno-w",
   "license": "MIT",
   "funding": "https://github.com/sponsors/Joruno-w",
-  "homepage": "https://github.com/Joruno-w/colordata#readme",
+  "homepage": "https://github.com/Joruno-w/vistoso#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Joruno-w/colordata.git"
+    "url": "git+https://github.com/Joruno-w/vistoso.git"
   },
   "bin": {
-    "colordata": "./bin/colordata.js"
+    "vistoso": "./bin/vistoso.js"
   },
-  "bugs": "https://github.com/Joruno-w/colordata/issues",
+  "bugs": "https://github.com/Joruno-w/vistoso/issues",
   "keywords": [
     "color",
     "colors",
     "colour",
     "colours",
-    "lookup"
+    "lookup",
+    "vistoso"
   ],
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",

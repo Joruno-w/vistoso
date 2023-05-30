@@ -1,12 +1,14 @@
-# colordata
+# vistoso
 
-[![NPM version](https://img.shields.io/npm/v/colordata?color=a1b858&label=)](https://www.npmjs.com/package/colordata)
+[![NPM version](https://img.shields.io/npm/v/vistoso?color=a1b858&label=)](https://www.npmjs.com/package/vistoso)
 
 Beautiful Colors Lookup in CLI
 
 ## Usage
 
-<div align='center'>npx <strong>colordata</strong> <em>&lt;color-name&gt;</em></div>
+<div align='center'>vistoso</div>
+
+<div align='center'>npx <strong>vistoso</strong> <em>&lt;color-name&gt;</em></div>
 
 
 ## License
