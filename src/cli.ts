@@ -1,19 +1,20 @@
-import chalk from "chalk";
-import { getColors, colors, type Color } from ".";
+import chalk from 'chalk'
+import { type Color, colors, getColors } from '.'
 
-const input = (process.argv[2] || "").trim().toLocaleLowerCase();
-const limit = +process.argv[3] || (input ? 15 : -1);
+const input = (process.argv[2] || '').trim().toLocaleLowerCase()
+const limit = +process.argv[3] || (input ? 15 : -1)
 
-let items = input ? getColors(input) : colors;
+let items = input ? getColors(input) : colors
 
-if (!isNaN(limit) && limit > 0) items = items.slice(0, limit);
+if (!isNaN(limit) && limit > 0)
+  items = items.slice(0, limit)
 
-console.log();
+console.log()
 items.forEach((i: Color) => {
   console.log(
-    chalk.bgHex(i.value).hex(i.lightness > 0.5 ? "#000000" : "#ffffff")(
-      `  ${i.value}  ${i.romanized.padEnd(6, " ")}  ${i.name}  `
-    )
-  );
-});
-console.log();
+    chalk.bgHex(i.value).hex(i.lightness > 0.5 ? '#000000' : '#ffffff')(
+      `  ${i.value}  ${i.romanized.padEnd(6, ' ')}  ${i.name}  `,
+    ),
+  )
+})
+console.log()

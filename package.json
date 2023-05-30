@@ -13,7 +13,7 @@
     "url": "git+https://github.com/Joruno-w/vistoso.git"
   },
   "bin": {
-    "vistoso": "./bin/vistoso.js"
+    "vistoso": "./bin/vistoso.cjs"
   },
   "bugs": "https://github.com/Joruno-w/vistoso/issues",
   "keywords": [
