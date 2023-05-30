@@ -23,7 +23,7 @@ function shuffle<T>(_arr: T[]): T[] {
 export const colors = _colors as Color[]
 
 export function getColors(name: string) {
-  return name == 'random'
+  return name === 'random'
     ? shuffle(colors)
     : colors.filter(i => i.names.includes(name))
 }
