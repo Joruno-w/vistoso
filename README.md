@@ -6,9 +6,11 @@ Beautiful Colors Lookup in CLI
 
 ## Usage
 
-<div align='center'>npx <strong>vistoso</strong> <em>&lt;color-name&gt;</em></div>
+<pre align='center'>
+npx <b>vistoso</b> <em>&lt;color-name&gt;</em>
+</pre>
 
-<div align='center'><img src='https://github.com/Joruno-w/vistoso/assets/54349117/fb4b8630-b4b7-4ec2-b3d3-7e083509ce59' alt='' /></div>
+<p align='center'><img src='https://github.com/Joruno-w/vistoso/assets/54349117/fb4b8630-b4b7-4ec2-b3d3-7e083509ce59' width='550px' /></p>
 
 ## License
 [MIT](./LICENSE) License © 2023 [Joruno-w](https://github.com/Joruno-w)
