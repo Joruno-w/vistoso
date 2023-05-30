@@ -1,6 +1,6 @@
 {
   "name": "vistoso",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "packageManager": "pnpm@7.9.5",
   "description": "Beautiful Colors Lookup in CLI",
   "author": "Joruno-w",
