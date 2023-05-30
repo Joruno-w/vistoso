@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@7.9.5",
-  "description": "Starter template for TypeScript library",
+  "description": "Beautiful Colors Lookup in CLI",
   "author": "Joruno-w",
   "license": "MIT",
   "funding": "https://github.com/sponsors/Joruno-w",
@@ -11,6 +11,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Joruno-w/colordata.git"
+  },
+  "bin": {
+    "colordata": "./bin/colordata.js"
   },
   "bugs": "https://github.com/Joruno-w/colordata/issues",
   "keywords": [
@@ -20,57 +23,42 @@
     "colours",
     "lookup"
   ],
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
-    }
-  },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
   "files": [
-    "dist"
+    "dist",
+    "bin",
+    "color.json"
   ],
   "scripts": {
-    "build": "unbuild",
-    "dev": "unbuild --stub",
-    "lint": "eslint .",
-    "prepublishOnly": "nr build",
-    "release": "bumpp && npm publish",
-    "start": "esno src/index.ts",
-    "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "dev": "esno src/cli.ts",
+    "build": "esno scripts/build.ts && tsup src/cli.ts src/index.ts --format cjs,esm --dts --minify",
+    "prepare": "npm run build",
+    "release": "npx bumpp --commit --tag --push && npm publish",
+    "web": "npm -C web run dev"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
+    "@types/chroma-js": "^2.4.0",
+    "@types/color-namer": "^1.3.0",
     "@types/node": "^18.15.11",
     "bumpp": "^9.1.0",
+    "chroma-js": "^2.4.2",
+    "color-namer": "^1.4.0",
     "eslint": "^8.37.0",
     "esno": "^0.16.3",
     "lint-staged": "^13.2.0",
     "pnpm": "^8.1.1",
     "rimraf": "^4.4.1",
     "simple-git-hooks": "^2.8.1",
+    "tsup": "^6.7.0",
     "typescript": "^5.0.3",
     "unbuild": "^1.2.0",
     "vite": "^4.2.1",
     "vitest": "^0.29.8"
   },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
+  "dependencies": {
+    "chalk": "^5.2.0"
   }
 }
