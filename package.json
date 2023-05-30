@@ -1,6 +1,5 @@
 {
   "name": "vistoso",
-  "type": "module",
   "version": "0.0.6",
   "packageManager": "pnpm@7.9.5",
   "description": "Beautiful Colors Lookup in CLI",
@@ -13,7 +12,7 @@
     "url": "git+https://github.com/Joruno-w/vistoso.git"
   },
   "bin": {
-    "vistoso": "./bin/vistoso.cjs"
+    "vistoso": "./bin/vistoso.js"
   },
   "bugs": "https://github.com/Joruno-w/vistoso/issues",
   "keywords": [
