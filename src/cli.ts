@@ -2,7 +2,7 @@ import chalk from 'chalk'
 import { type Color, colors, getColors } from '.'
 
 const input = (process.argv[2] || '').trim().toLocaleLowerCase()
-const limit = +process.argv[3] || (input ? 15 : -1)
+const limit = +process.argv[3] || (input ? 20 : -1)
 
 let items = input ? getColors(input) : colors
 
