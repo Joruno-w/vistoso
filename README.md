@@ -5,7 +5,6 @@
 Beautiful Colors Lookup in CLI
 
 ## Usage
-
 <pre align='center'>
   npx <b>vistoso</b> <em>&lt;color-name&gt;</em>
 </pre>
