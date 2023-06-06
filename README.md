@@ -1,6 +1,7 @@
 # vistoso
 [![NPM version](https://img.shields.io/npm/v/vistoso?color=a1b858&label=)](https://www.npmjs.com/package/vistoso)
 Beautiful Colors Lookup in CLI
+
 ## Usage
 <pre align='center'>
   npx <b>vistoso</b> <em>&lt;color-name&gt;</em>
